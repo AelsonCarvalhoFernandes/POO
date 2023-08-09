@@ -2,7 +2,7 @@ package questaoA;
 
 public class Carro{
     int codigo;
-    int marca;
+    String marca;
     String cor;
     String modelo;
     int anoFabricacao;
@@ -12,7 +12,7 @@ public class Carro{
     double preco;
     boolean basico;
 
-    public void cadastrar(int codigo, int marca, String cor, String modelo, int anoFabricacao, int numeroPortas, String tipoCombustivel, String qualidadeDisponivel, double preco, boolean basico){
+    public void cadastrar(int codigo, String marca, String cor, String modelo, int anoFabricacao, int numeroPortas, String tipoCombustivel, String qualidadeDisponivel, double preco, boolean basico){
         this.codigo = codigo;
         this.marca = marca;
         this.cor = cor;
@@ -25,7 +25,7 @@ public class Carro{
         this.basico = basico;
     }
 
-    public void atualizar(int codigo, int marca, String cor, String modelo, int anoFabricacao, int numeroPortas, String tipoCombustivel, String qualidadeDisponivel, double preco, boolean basico){
+    public void atualizar(int codigo, String marca, String cor, String modelo, int anoFabricacao, int numeroPortas, String tipoCombustivel, String qualidadeDisponivel, double preco, boolean basico){
         this.codigo = codigo;
         this.marca = marca;
         this.cor = cor;
@@ -40,7 +40,7 @@ public class Carro{
 
     public void listar(){
         System.out.println("Veiculo:\n"
-        +"Codigo: "+this.codigo+"\n"+"Marca: "+this.marca+"\n"+"Cor: "+this.cor+"\n"+"Modelo: "+this.modelo+"\n"+"Ano de fabricação:"+this.anoFabricacao+"\n"+"Numero de portas"+this.numeroPortas+"\n"+"Tipo de combustivel"+this.tipoCombustivel+"\n"+"Qualidade: "+this.qualidadeDisponivel+"\n"+"Preço: "+this.preco+"\n"+"Tipo: "+this.basico
+        +"Codigo: "+this.codigo+"\n"+"Marca: "+this.marca+"\n"+"Cor: "+this.cor+"\n"+"Modelo: "+this.modelo+"\n"+"Ano de fabricaï¿½ï¿½o:"+this.anoFabricacao+"\n"+"Numero de portas"+this.numeroPortas+"\n"+"Tipo de combustivel"+this.tipoCombustivel+"\n"+"Qualidade: "+this.qualidadeDisponivel+"\n"+"Preï¿½o: "+this.preco+"\n"+"Tipo: "+this.basico
         );
     }
 }
